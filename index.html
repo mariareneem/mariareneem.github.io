@@ -1,56 +1,97 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html lang="es"> 
-    </head>
-        <title>Clase2 - HTML</title>
-        <meta charset="utf-8">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-    <body>
-        <h1>María Renee Montaño</h1>
-        <h2>Mis primeros pasos en html</h2>
+<body>
+    <h1>CREAR CUENTA</h1>
+    <!--label y tilde ó con acute;-->
+    <fieldset>
+        <legend>
+            Informaci&oacute;n Personal
+        </legend>
+        <!-- CREAR UN FORMULARIO-->
+        <form>
+            <label>Nombre *</label>
+            <br>
+            <input type="text" name="nombre">
+            <label>Apellido *</label>
+            <input type="text" name="apellido" placeholder="Montaño">
+            <br>
+            <label>Dirección de email *</label>
+            <input type="email" placeholder="xmail@xmail.com">
+            <label>Nro de Documento *</label>
+            <!--SOLO NUMEROS-->
+            <input type="number" placeholder="xxxxxxxx">
+            <label>Edad</label>
+            <input type="number" min="0" max="120">
+            <br>
+            <label>Tiene hijo</label>
+            <input type="checkbox" name="th" value="SI">
+            <label>Cuantos?</label>
+            <input type="number">
+            <br>
+            <label>CASADO</label>
+            <span>SI</span>
+            <input type="radio" name="casado" value="SI">
+            <span>NO</span>
+            <input type="radio" name="casado" value="NO" checked>
+            <br>
+            <label> Cantidad</label>
+            <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+    </fieldset>
+    <fieldset>
+        <legend>Form con tabla</legend>
+        <form action="../clase3/index.html" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        <label>Nombre *</label>
+                        <input type="text" name="nombre">
+                    </td>
+                    <td>
+                        <label>Apellido *</label>
+                        <input type="text" name="apellido" placeholder="Montaño">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Direccion de email *</label>
+                        <br>
+                        <input type="text" name="email" placeholder="xmail@xmail.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Nro de Documento *</label>
+                        <br>
+                        <input type="number" name="dni" placeholder="99999999">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="GUARDAR">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
 
-        <p>Lenguajes</p>
-        <!-- lista sin orden -->
-        <u1>
-            <li>java</li>
-            <li>c#</li>
-            <li>go</li>
-        </u1>
-        <p>Posiciones</p>
-        <!-- listas ordenadas -->
-        <ol>
-            <li>primer</li>
-            <li>segundo</li>
-            <li>tercero</li>
-        </ol>
-        <br>
+    <label>Adherirse al boletín de novedades</label>
+    <input type="checkbox" name="adh" value="SI" checked>
+    <input type="submit" value="ENVIAR">
+    </form>
+    <hr>
+</body>
 
-        <!-- imagen relativo -->
-        <img src="Calabaza.png" alt="Calabaza" style="transform:rotate(90deg);" width="200">
-        <br/>
-        <br>
-        <br>
-
-        <!-- absoluto -->
-        <img src="https://picsum.photos/200/300"
-        
-        <>
-
-        <!-- enlaces -->
-        <a href="https://picsum.photos/200/300" target="_blank">Ver Imagen</a>
-
-        <hr>
-
-        <!--etiquetas basicas-->
-        c#
-        <b>c#</b>
-        <mark>java</mark>
-        <ins>go</ins>
-        <small>segundo</small>
-        <del>tercero</del>
-        <sup>MARÍA</sup>
-        <sub>RENEE</sub>
-
-    </body>
 </html>
